@@ -1,211 +1,145 @@
 import Image from "next/image";
 import Link from "next/link";
-import { HomeCanvasScaler } from "./HomeCanvasScaler";
 
 const totemSamples = [
   {
     name: "快乐云腹",
-    desc: "吃饱也柔软，云朵会发光",
+    desc: "把小肚子转译成松弛感",
     image: "/totems/happy-cloud-belly.png",
   },
   {
-    name: "月亮圆章",
-    desc: "圆圆脸也有自己的月光",
-    image: "/totems/moon-face-emblem.png",
+    name: "青春星野",
+    desc: "把长痘痘转译成生长力",
+    image: "/totems/spring-star-field.png",
   },
   {
-    name: "隐形蘑菇",
-    desc: "社恐充电中，边界很可爱",
-    image: "/totems/invisible-mushroom.png",
+    name: "轻羽冠",
+    desc: "把发量焦虑转译成留白风格",
+    image: "/totems/feather-crown.png",
   },
   {
-    name: "慢慢龟印",
-    desc: "慢一点，生活也可以抵达",
-    image: "/totems/slow-turtle-seal.png",
+    name: "口袋山丘",
+    desc: "把小个子转译成站稳世界",
+    image: "/totems/pocket-hill.png",
   },
 ];
 
-const processSteps = [
-  {
-    num: "01",
-    title: "写下小烦恼",
-    desc: "用一句话说出你的小情绪或困扰。",
-  },
-  {
-    num: "02",
-    title: "AI 生成图腾",
-    desc: "AI 转译情绪，生成你的专属图腾形象。",
-  },
-  {
-    num: "03",
-    title: "转成商品",
-    desc: "一键生成商品预览，支持生产与定制。",
-  },
+const flowSteps = [
+  ["01", "表达", "写下一句小烦恼"],
+  ["02", "转译", "AI 生成官方图腾 IP"],
+  ["03", "商品", "生成徽章、手机壳、贴纸"],
+  ["04", "生产", "输出订单与工厂生产单"],
 ];
 
-const loopSteps = [
-  ["用户表达", "一句话说出小烦恼"],
-  ["AI 情绪转译", "理解情绪与特征"],
-  ["图腾设计", "生成专属图腾形象"],
-  ["商品预览", "徽章 / 手机壳 / 贴纸"],
-  ["工厂生产", "对接工厂，安排生产"],
-];
+const proofItems = ["不上传照片", "不评价身体", "16 个官方图腾", "订单生产单闭环"];
 
 export default function Home() {
   return (
-    <main className="page landing-page home-16">
-      <HomeCanvasScaler />
-      <div className="shell app-frame home-frame">
-        <header className="topbar landing-topbar home-topbar">
-          <Link className="brand home-brand" href="/" aria-label="BodyTotem 首页">
-            <img src="/brand/bodytotem-mark.svg" alt="" className="brand-mark" />
-            <span>BodyTotem</span>
-            <small>身体图腾所</small>
-          </Link>
-          <nav className="nav-links home-nav" aria-label="首页导航">
-            <a href="#totems">图腾样例</a>
-            <a href="#demo">Demo 闭环</a>
-            <a href="#how">如何工作</a>
-            <a href="#loop">关于我们</a>
-          </nav>
-          <Link className="button nav-cta home-nav-cta" href="/create">
-            <span className="cta-star" aria-hidden="true" />
-            开始生成
-          </Link>
-        </header>
+    <main className="apple-home">
+      <header className="apple-nav">
+        <Link className="apple-brand" href="/" aria-label="BodyTotem 首页">
+          <img src="/brand/bodytotem-mark.svg" alt="" />
+          <span>BodyTotem</span>
+          <small>身体图腾所</small>
+        </Link>
+        <nav className="apple-nav-links" aria-label="首页导航">
+          <a href="#flow">闭环</a>
+          <a href="#totems">图腾库</a>
+          <a href="#factory">生产单</a>
+        </nav>
+        <Link className="apple-nav-button" href="/create">开始生成</Link>
+      </header>
 
-        <section className="home-hero-row">
-          <div className="home-copy">
-            <img src="/brand/cloud-charm.svg" alt="" className="home-charm" />
-            <h1>
-              <span>说出你的小烦恼，</span>
-              <strong>AI 为你生成专属图腾</strong>
-            </h1>
-            <p className="lead">
-              不上传照片，不评价身体。你输入一句话，AI 将小情绪转译成可爱图腾商品，陪伴你的每一天。
-            </p>
-            <div className="actions home-actions">
-              <Link className="button home-primary-cta" href="/create">
-                <span className="cta-star" aria-hidden="true" />
-                开始生成我的图腾
-              </Link>
-              <a className="button secondary home-secondary-cta" href="#totems">
-                <span className="outline-icon" aria-hidden="true" />
-                查看图腾样例
-              </a>
-            </div>
-            <div className="home-assurance" aria-label="产品承诺">
-              <span>隐私安全</span>
-              <span>不上传照片</span>
-              <span>可分享可佩戴</span>
-              <span>可生产可定制</span>
-            </div>
+      <section className="apple-hero" aria-label="BodyTotem 产品介绍">
+        <div className="apple-hero-copy">
+          <p className="apple-kicker">AI Coding Hackathon MVP</p>
+          <h1>把一句小烦恼，变成一件可生产的商品。</h1>
+          <p className="apple-lead">
+            BodyTotem 不上传照片、不评价身体。它把用户主动说出的小特征，转译成个人图腾，再进入商品预览、模拟订单和工厂生产单。
+          </p>
+          <div className="apple-actions">
+            <Link className="apple-primary" href="/create">生成我的图腾</Link>
+            <a className="apple-secondary" href="#flow">查看闭环</a>
           </div>
-
-          <aside className="home-demo-panel" id="demo" aria-label="BodyTotem Demo 闭环">
-            <div className="demo-stage-tabs">
-              <span>1. 你的小烦恼</span>
-              <span>2. AI 情绪转译</span>
-              <span>3. 专属图腾生成</span>
-              <span>4. 商品预览</span>
-            </div>
-            <div className="demo-stage-main">
-              <div className="demo-input-bubble">
-                <p>每次吃完就想躺平，肚子像装了个云</p>
-              </div>
-              <span className="demo-arrow" aria-hidden="true">→</span>
-              <div className="demo-ai-card">
-                <div className="demo-ai-icon" aria-hidden="true">AI</div>
-                <strong>快乐云腹</strong>
-                <span>云柔柔，心轻轻</span>
-              </div>
-              <span className="demo-arrow" aria-hidden="true">→</span>
-              <div className="demo-totem-card">
-                <Image
-                  src="/totems/happy-cloud-belly.png"
-                  alt="快乐云腹图腾"
-                  width={300}
-                  height={260}
-                  priority
-                />
-              </div>
-              <div className="demo-product-stack" aria-label="商品预览">
-                {["徽章", "手机壳", "贴纸"].map((item) => (
-                  <div className="demo-product-mini" key={item}>
-                    <Image
-                      src="/totems/happy-cloud-belly.png"
-                      alt={`快乐云腹${item}`}
-                      width={110}
-                      height={110}
-                    />
-                    <span>{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="demo-production-status">
-              <span className="status-check" aria-hidden="true">✓</span>
-              生产单已生成，可进入工厂生产流程
-            </div>
-          </aside>
-        </section>
-
-        <section className="home-mid-row">
-          <div className="home-process-card" id="how">
-            <h2>从一句小烦恼，到一件专属商品</h2>
-            <div className="home-process-grid">
-              {processSteps.map((step) => (
-                <article className="home-step-card" key={step.num}>
-                  <span className="home-step-icon">{step.num}</span>
-                  <div>
-                    <strong>{step.title}</strong>
-                    <p>{step.desc}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-
-          <div className="home-gallery-card" id="totems">
-            <h2>每个小烦恼，都可以有一枚图腾</h2>
-            <div className="home-totem-grid">
-              {totemSamples.map((item) => (
-                <article className="home-totem-sample" key={item.name}>
-                  <div className="sample-image-shell">
-                    <Image src={item.image} alt={item.name} width={160} height={140} />
-                  </div>
-                  <h3>{item.name}</h3>
-                  <p>{item.desc}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="home-loop-card" id="loop" aria-label="AI 内容生产到商品生产闭环">
-          <h2>AI 内容生产 × 商品生产闭环</h2>
-          <div className="home-loop-flow">
-            {loopSteps.map(([title, desc], index) => (
-              <div className="home-loop-node" key={title}>
-                <span className="loop-symbol">{String(index + 1).padStart(2, "0")}</span>
-                <strong>{title}</strong>
-                <p>{desc}</p>
-              </div>
+          <div className="apple-proof-strip" aria-label="产品承诺">
+            {proofItems.map((item) => (
+              <span key={item}>{item}</span>
             ))}
           </div>
-        </section>
+        </div>
 
-        <section className="home-bottom-cta">
-          <div>
-            <h2>把小烦恼变成小图腾，把情绪变成可佩戴的治愈能量。</h2>
-            <p>BodyTotem 将 AI 生成从“内容生产”推进成“商品生产前端”。</p>
+        <div className="apple-product-stage" aria-label="快乐云腹商品化预览">
+          <div className="apple-stage-copy">
+            <span>Demo Case</span>
+            <strong>快乐云腹</strong>
+            <p>“我不是要藏起自己，我只是在收藏快乐。”</p>
           </div>
-          <Link className="button home-primary-cta" href="/create">
-            <span className="cta-star" aria-hidden="true" />
-            开始生成我的图腾
-          </Link>
-        </section>
-      </div>
+          <div className="apple-totem-focus">
+            <Image
+              src="/totems/happy-cloud-belly.png"
+              alt="快乐云腹图腾"
+              width={420}
+              height={420}
+              priority
+            />
+          </div>
+          <div className="apple-product-row" aria-label="商品预览">
+            <div className="apple-product apple-product-badge">
+              <Image src="/totems/happy-cloud-belly.png" alt="快乐云腹徽章" width={126} height={126} />
+              <span>徽章 · ¥29</span>
+            </div>
+            <div className="apple-product apple-product-phone">
+              <Image src="/totems/happy-cloud-belly.png" alt="快乐云腹手机壳" width={126} height={126} />
+              <span>手机壳 · ¥59</span>
+            </div>
+            <div className="apple-product apple-product-sticker">
+              <Image src="/totems/happy-cloud-belly.png" alt="快乐云腹贴纸" width={126} height={126} />
+              <span>贴纸 · ¥19</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="apple-flow" id="flow" aria-label="产品闭环">
+        <div>
+          <p className="apple-section-label">Product Loop</p>
+          <h2>不是生成器，是一条商品化链路。</h2>
+        </div>
+        <div className="apple-flow-grid">
+          {flowSteps.map(([num, title, desc]) => (
+            <article className="apple-flow-step" key={num}>
+              <span>{num}</span>
+              <strong>{title}</strong>
+              <p>{desc}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="apple-totems" id="totems" aria-label="官方图腾样例">
+        <div className="apple-section-head">
+          <p className="apple-section-label">Totem Catalog</p>
+          <h2>官方图腾库，让名字、图片、商品、生产单保持一致。</h2>
+        </div>
+        <div className="apple-totem-grid">
+          {totemSamples.map((item) => (
+            <article className="apple-totem-card" key={item.name}>
+              <Image src={item.image} alt={item.name} width={180} height={180} />
+              <strong>{item.name}</strong>
+              <p>{item.desc}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="apple-factory" id="factory" aria-label="生产单证明">
+        <div>
+          <p className="apple-section-label">Factory Sheet</p>
+          <h2>AI 图腾已转化为可执行的生产信息。</h2>
+          <p>商品类型、尺寸、材质、工艺、包装方式、设计文件和质检说明，全部由系统结构化输出。</p>
+        </div>
+        <Link className="apple-primary" href="/create">开始完整 Demo</Link>
+      </section>
     </main>
   );
 }
