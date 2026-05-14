@@ -3132,11 +3132,116 @@ button.button {
 .factory-sheet {
   position: relative;
   border-color: rgba(202, 102, 255, .36);
+  color: #F8F4FF;
   background:
     url("/brand/factory-line.svg") right top / 280px auto no-repeat,
     linear-gradient(145deg, rgba(255,255,255,.055), transparent 48%),
     rgba(17, 12, 43, .88);
   box-shadow: 0 0 40px rgba(153, 71, 255, .18), var(--shadow-card);
+}
+
+.factory-sheet .label,
+.factory-sheet dt,
+.factory-sheet .factory-key {
+  color: #CFC3E8;
+}
+
+.factory-sheet .badge {
+  color: #FFF8D8;
+  background: rgba(251, 191, 36, .14);
+  border-color: rgba(251, 191, 36, .38);
+}
+
+.factory-sheet-head {
+  border-bottom-color: rgba(224, 206, 255, .18);
+}
+
+.factory-sheet-head h2 {
+  color: #FFFFFF;
+}
+
+.factory-preview-row {
+  border-bottom-color: rgba(224, 206, 255, .18);
+}
+
+.factory-sheet .factory-fields {
+  background: rgba(7, 5, 22, .46);
+  border-color: rgba(224, 206, 255, .18);
+}
+
+.factory-sheet .factory-field {
+  border-bottom-color: rgba(224, 206, 255, .14);
+}
+
+.factory-sheet .factory-key {
+  background: rgba(255, 255, 255, .035);
+  border-right-color: rgba(224, 206, 255, .14);
+}
+
+.factory-sheet .factory-val {
+  color: #FFFFFF;
+  font-weight: 760;
+  text-shadow: 0 1px 12px rgba(255, 255, 255, .08);
+}
+
+.factory-sheet .factory-status-row {
+  color: #D9FFE9;
+  background: rgba(52, 211, 153, .13);
+  border-color: rgba(134, 239, 172, .34);
+}
+
+.factory-sheet .factory-note {
+  color: #FFF4C2;
+  background: rgba(96, 62, 10, .64);
+  border-color: rgba(251, 191, 36, .42);
+}
+
+.factory-sheet .factory-spec-grid div {
+  background: rgba(7, 5, 22, .42);
+  border-color: rgba(224, 206, 255, .16);
+}
+
+.factory-sheet .factory-spec-grid span {
+  color: #CFC3E8;
+}
+
+.factory-sheet .factory-spec-grid strong {
+  color: #FFFFFF;
+}
+
+.factory-sheet .factory-qc {
+  color: #F8F4FF;
+  background: rgba(9, 8, 30, .54);
+  border-color: rgba(147, 197, 253, .30);
+}
+
+.factory-sheet .factory-qc-fallback,
+.factory-sheet .factory-qc-passed {
+  background: rgba(16, 78, 57, .52);
+  border-color: rgba(134, 239, 172, .36);
+}
+
+.factory-sheet .factory-qc-needs_review {
+  background: rgba(96, 62, 10, .58);
+  border-color: rgba(251, 191, 36, .42);
+}
+
+.factory-sheet .factory-qc strong {
+  color: #FFFFFF;
+}
+
+.factory-sheet .factory-qc span,
+.factory-sheet .factory-qc li {
+  color: #E7DDF8;
+}
+
+.factory-sheet .factory-proof {
+  color: #D8CFF0;
+  border-top-color: rgba(224, 206, 255, .18);
+}
+
+.factory-sheet .factory-proof strong {
+  color: #FBBF24;
 }
 
 .factory-design-preview {
