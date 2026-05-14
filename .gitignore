@@ -1,0 +1,13 @@
+.env*.local
+.env
+node_modules/
+.next/
+out/
+dist/
+*.log
+tsconfig.tsbuildinfo
+
+data/orders/*.json
+data/sessions/*.json
+public/generated/*
+!public/generated/.gitkeep

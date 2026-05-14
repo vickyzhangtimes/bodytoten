@@ -1,0 +1,15 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">BodyTotem placeholder</title>
+  <desc id="desc">A neutral amulet placeholder for a totem that is waiting for image generation.</desc>
+  <rect width="1024" height="1024" rx="180" fill="#FFF7ED"/>
+  <circle cx="512" cy="512" r="300" fill="#F6E7FF"/>
+  <circle cx="512" cy="512" r="238" fill="#FFF7ED" stroke="#F7C56B" stroke-width="18"/>
+  <path d="M512 254L552 382L686 382L578 459L620 586L512 507L404 586L446 459L338 382L472 382L512 254Z" fill="#FBBF24"/>
+  <path d="M354 608C398 672 452 704 512 704C572 704 626 672 670 608" stroke="#8B5CF6" stroke-width="24" stroke-linecap="round"/>
+  <path d="M408 506C408 483.909 425.909 466 448 466C470.091 466 488 483.909 488 506C488 528.091 470.091 546 448 546C425.909 546 408 528.091 408 506Z" fill="#241832"/>
+  <path d="M536 506C536 483.909 553.909 466 576 466C598.091 466 616 483.909 616 506C616 528.091 598.091 546 576 546C553.909 546 536 528.091 536 506Z" fill="#241832"/>
+  <path d="M304 302C316 276 342 258 372 258C402 258 428 276 440 302" stroke="#EC4899" stroke-width="16" stroke-linecap="round"/>
+  <path d="M584 302C596 276 622 258 652 258C682 258 708 276 720 302" stroke="#EC4899" stroke-width="16" stroke-linecap="round"/>
+  <path d="M278 746H746" stroke="#F7C56B" stroke-width="18" stroke-linecap="round"/>
+  <path d="M342 794H682" stroke="#D8B4FE" stroke-width="14" stroke-linecap="round"/>
+</svg>
