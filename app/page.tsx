@@ -6,22 +6,22 @@ const totemSamples = [
   {
     name: "快乐云腹",
     desc: "吃饱也柔软，云朵会发光",
-    image: "/mock/happy-cloud-belly.svg",
+    image: "/totems/happy-cloud-belly.png",
   },
   {
     name: "月亮圆章",
     desc: "圆圆脸也有自己的月光",
-    image: "/mock/moon-face-emblem.png",
+    image: "/totems/moon-face-emblem.png",
   },
   {
     name: "隐形蘑菇",
     desc: "社恐充电中，边界很可爱",
-    image: "/mock/invisible-mushroom.png",
+    image: "/totems/invisible-mushroom.png",
   },
   {
     name: "慢慢龟印",
     desc: "慢一点，生活也可以抵达",
-    image: "/mock/slow-turtle-seal.png",
+    image: "/totems/slow-turtle-seal.png",
   },
 ];
 
@@ -122,7 +122,7 @@ export default function Home() {
               <span className="demo-arrow" aria-hidden="true">→</span>
               <div className="demo-totem-card">
                 <Image
-                  src="/mock/happy-cloud-belly.svg"
+                  src="/totems/happy-cloud-belly.png"
                   alt="快乐云腹图腾"
                   width={300}
                   height={260}
@@ -133,7 +133,7 @@ export default function Home() {
                 {["徽章", "手机壳", "贴纸"].map((item) => (
                   <div className="demo-product-mini" key={item}>
                     <Image
-                      src="/mock/happy-cloud-belly.svg"
+                      src="/totems/happy-cloud-belly.png"
                       alt={`快乐云腹${item}`}
                       width={110}
                       height={110}

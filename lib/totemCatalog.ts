@@ -68,11 +68,11 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     story:
       "快乐云腹代表一种柔软、松弛、会认真享受生活的能量。它不是要你改变自己，而是提醒你用更温柔的方式和自己相处。",
     visualKeywords: ["云朵", "小太阳", "圆润线条", "治愈徽章", "快乐能量"],
-    imageUrl: "/mock/happy-cloud-belly.svg",
+    imageUrl: "/totems/happy-cloud-belly.png",
     imageStatus: "ready",
-    badgeMockup: "/mock/happy-cloud-belly.svg",
-    phonecaseMockup: "/mock/happy-cloud-belly.svg",
-    stickerMockup: "/mock/happy-cloud-belly.svg",
+    badgeMockup: "/totems/happy-cloud-belly.png",
+    phonecaseMockup: "/totems/happy-cloud-belly.png",
+    stickerMockup: "/totems/happy-cloud-belly.png",
     shareCopy: "我不是要藏起自己，我只是在收藏快乐。"
   }),
   defineTotem({
@@ -89,7 +89,7 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     safeReframe: "圆润不是需要被修正的地方，而是一种亲近、柔和、容易被记住的气质。",
     story: "月亮圆章代表温和、亲近和稳定的陪伴感。它像一轮小月亮，提醒你不必变成锋利的形状，也可以拥有自己的光。",
     visualKeywords: ["月亮", "星星", "圆形徽章", "柔光", "亲和力"],
-    imageUrl: "/mock/moon-face-emblem.png",
+    imageUrl: "/totems/moon-face-emblem.png",
     imageStatus: "ready",
     shareCopy: "我不是不够立体，我只是自带月亮光。"
   }),
@@ -107,7 +107,7 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     safeReframe: "害羞不是失败，而是一种慢慢打开自己的节奏。",
     story: "隐形蘑菇代表安静、自我保护和柔软的边界感。它不是逃避世界，而是在自己的小伞下慢慢积蓄能量。",
     visualKeywords: ["蘑菇", "小伞", "柔软保护", "安静", "小世界"],
-    imageUrl: "/mock/invisible-mushroom.png",
+    imageUrl: "/totems/invisible-mushroom.png",
     imageStatus: "ready",
     shareCopy: "我不是不会社交，我只是需要自己的小伞。"
   }),
@@ -125,7 +125,7 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     safeReframe: "拖延背后也许不是懒，而是你需要找到自己的启动节奏。",
     story: "慢慢龟印代表稳定、耐心和属于自己的节奏。它提醒你不必和所有人同速，只要还在往前，就已经很好。",
     visualKeywords: ["乌龟", "时钟", "荷叶", "慢节奏", "稳定"],
-    imageUrl: "/mock/slow-turtle-seal.png",
+    imageUrl: "/totems/slow-turtle-seal.png",
     imageStatus: "ready",
     shareCopy: "我走得慢，但我一直在路上。"
   }),
@@ -143,7 +143,7 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     safeReframe: "晚睡不只是疲惫，也可能是夜晚给你的创作窗口。",
     story: "夜光猫头鹰代表夜晚的清醒、灵感和独处时的发光感。它提醒你照顾自己，也珍惜那些安静时刻里的创造力。",
     visualKeywords: ["猫头鹰", "月亮", "星星", "灯笼", "夜晚灵感"],
-    imageUrl: "/mock/night-glow-owl.png",
+    imageUrl: "/totems/night-glow-owl.png",
     imageStatus: "ready",
     shareCopy: "我的灵感，常常在夜里亮起来。"
   }),
@@ -161,7 +161,7 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     safeReframe: "拍照僵硬不是问题，它只是你还没找到和镜头相处的方式。",
     story: "木偶星人代表可爱的笨拙感和慢慢适应舞台的勇气。它不是要你完美营业，而是允许你用自己的方式出现。",
     visualKeywords: ["木偶", "星星", "舞台", "相机", "笨拙可爱"],
-    imageUrl: "/mock/puppet-star.png",
+    imageUrl: "/totems/puppet-star.png",
     imageStatus: "ready",
     shareCopy: "我不是不上镜，我只是还在学习和镜头做朋友。"
   }),
@@ -180,8 +180,8 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     story:
       "青春星野是一片正在生长的小宇宙。它有星点、有花种、有还没完全展开的光。它提醒你：不必等到完美才值得被看见，正在变化的你，也有自己的生命力。",
     visualKeywords: ["星点", "春野", "种子", "小花", "柔光", "星空花园"],
-    imageUrl: GENERIC_TOTEM_PLACEHOLDER,
-    imageStatus: "needs_generation",
+    imageUrl: "/totems/spring-star-field.png",
+    imageStatus: "ready",
     shareCopy: "别人看见的是在意，我选择叫它青春星野。"
   }),
   defineTotem({
@@ -199,8 +199,8 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     story:
       "句子积木会把每一个想法都轻轻放好。它不急着冲出去，而是先确认每句话的位置。它提醒你：慢一点的表达，也可能是更认真、更有逻辑的表达。",
     visualKeywords: ["积木", "声波", "小路", "星星", "温柔搭建", "小房子"],
-    imageUrl: GENERIC_TOTEM_PLACEHOLDER,
-    imageStatus: "needs_generation",
+    imageUrl: "/totems/sentence-blocks.png",
+    imageStatus: "ready",
     shareCopy: "别人听见的是停顿，我选择叫它句子积木。"
   }),
   defineTotem({
@@ -218,8 +218,8 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     story:
       "口袋山丘是一座小小但坚定的山。它不需要很高，也能托住云、风和星星。它提醒你：真正的存在感，不是来自被比较，而是来自你如何站稳自己。",
     visualKeywords: ["小山丘", "口袋", "小旗帜", "云朵", "星星", "小路"],
-    imageUrl: GENERIC_TOTEM_PLACEHOLDER,
-    imageStatus: "needs_generation",
+    imageUrl: "/totems/pocket-hill.png",
+    imageStatus: "ready",
     shareCopy: "别人比较的是高度，我选择叫它口袋山丘。"
   }),
   defineTotem({
@@ -236,8 +236,8 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     safeReframe: "外在状态不决定你的价值。轻羽冠代表轻盈、清爽和自带边界的气质。它不是为了遮掩什么，而是把留白变成一种风格。",
     story: "轻羽冠是一枚由微风和羽毛组成的小冠冕。它不靠厚重取胜，而是靠清爽、轻盈和自己的轮廓感被记住。",
     visualKeywords: ["羽毛", "微风", "小皇冠", "星点", "柔光", "留白"],
-    imageUrl: GENERIC_TOTEM_PLACEHOLDER,
-    imageStatus: "needs_generation",
+    imageUrl: "/totems/feather-crown.png",
+    imageStatus: "ready",
     shareCopy: "别人注意到的是留白，我选择叫它轻羽冠。"
   }),
   defineTotem({
@@ -254,8 +254,8 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     safeReframe: "紧张不是失败信号，而是身体在认真准备。弹簧小鹿代表敏感、反应快，也代表你可以慢慢回到自己的节奏。",
     story: "弹簧小鹿总会先听见风声，也会先跳起来。它不是胆小，而是对世界足够敏感。等风过去，它会轻轻落地，再一次站稳。",
     visualKeywords: ["小鹿", "弹簧", "草地", "柔光", "恢复力", "星星"],
-    imageUrl: GENERIC_TOTEM_PLACEHOLDER,
-    imageStatus: "needs_generation",
+    imageUrl: "/totems/spring-deer.png",
+    imageStatus: "ready",
     shareCopy: "我会紧张，也会弹回来。"
   }),
   defineTotem({
@@ -272,8 +272,8 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     safeReframe: "想得多不只是消耗，也说明你有丰富的感受和联想。脑内星球把这些轨道收进一个有秩序的小宇宙。",
     story: "脑内星球有很多环绕轨道，想法像小卫星一样转来转去。它提醒你：内在世界很大，也可以慢慢找到属于自己的运行节奏。",
     visualKeywords: ["星球", "轨道", "小灯", "卫星", "宇宙", "思考光点"],
-    imageUrl: GENERIC_TOTEM_PLACEHOLDER,
-    imageStatus: "needs_generation",
+    imageUrl: "/totems/mind-planet.png",
+    imageStatus: "ready",
     shareCopy: "想法很多，也是我的宇宙在发光。"
   }),
   defineTotem({
@@ -290,8 +290,8 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     safeReframe: "大小不是力量的唯一尺度。星豆掌印代表灵活、细腻和珍贵的触感，也代表你用自己的方式握住世界。",
     story: "星豆掌印像一枚小小的宇宙手印，里面藏着星星和豆子。它提醒你：小巧不是少一分，而是多了一点灵活和珍贵。",
     visualKeywords: ["掌印", "星豆", "柔光", "小星星", "圆润徽章"],
-    imageUrl: GENERIC_TOTEM_PLACEHOLDER,
-    imageStatus: "needs_generation",
+    imageUrl: "/totems/star-bean-palm.png",
+    imageStatus: "ready",
     shareCopy: "小小掌心，也能握住星光。"
   }),
   defineTotem({
@@ -308,8 +308,8 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     safeReframe: "气场不只来自宽阔，也来自行动的方向。轻翼肩章代表轻盈、自由和移动中的力量。",
     story: "轻翼肩章是一对不沉重的小翅膀。它不需要占满空间，却能带你穿过风。它提醒你：轻盈也可以很有方向。",
     visualKeywords: ["羽翼", "肩章", "风", "星点", "轻盈", "徽章"],
-    imageUrl: GENERIC_TOTEM_PLACEHOLDER,
-    imageStatus: "needs_generation",
+    imageUrl: "/totems/light-wing-shoulder.png",
+    imageStatus: "ready",
     shareCopy: "轻一点，也能飞得很远。"
   }),
   defineTotem({
@@ -326,8 +326,8 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     safeReframe: "遗忘不等于不在乎。记忆贝壳代表温柔收藏和慢慢想起，也提醒你为重要的事留一个安全的岸边。",
     story: "记忆贝壳把小星星、小纸条和海风都收在壳里。它知道记忆有潮汐，有些事会晚一点回来，但重要的总能被重新捡起。",
     visualKeywords: ["贝壳", "潮汐", "星光", "小纸条", "海风", "收藏"],
-    imageUrl: GENERIC_TOTEM_PLACEHOLDER,
-    imageStatus: "needs_generation",
+    imageUrl: "/totems/memory-shell.png",
+    imageStatus: "ready",
     shareCopy: "记忆有潮汐，重要的会回到岸边。"
   }),
   defineTotem({
@@ -344,8 +344,8 @@ export const TOTEM_CATALOG: TotemCatalogItem[] = [
     safeReframe: "犹豫不是没有方向，而是在认真看见不同的可能。岔路小灯代表谨慎选择，也代表你愿意为自己的路负责。",
     story: "岔路小灯站在分岔口，不替你催促决定，只把每条路照亮一点。它提醒你：慢慢选择，也是在认真和未来打招呼。",
     visualKeywords: ["岔路", "小灯", "路牌", "星光", "温暖光圈", "方向"],
-    imageUrl: GENERIC_TOTEM_PLACEHOLDER,
-    imageStatus: "needs_generation",
+    imageUrl: "/totems/fork-road-lamp.png",
+    imageStatus: "ready",
     shareCopy: "犹豫不是停下，是在认真找路。"
   })
 ];

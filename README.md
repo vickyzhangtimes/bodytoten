@@ -23,13 +23,14 @@ BodyTotem 是“三人行必有 AI”黑客松 AI Coding 赛道的可运行项�
 
 ## 当前版本
 
-V1.16：唯一官方图腾库 + 受控 AI 生成链路。
+V1.17：16 个官方图腾资产完整接入 + 受控 AI 商品化闭环。
 
 - `totemCatalog` 是唯一官方 IP 数据源。
 - `/api/generate` 只保留两条路线：
   - preset：命中官方图腾库，使用固定 IP 设定。
   - custom：未命中时调用文本模型生成受控图腾 JSON。
-- `/api/generate-image` 支持 ModelScope `Tongyi-MAI/Z-Image-Turbo`，生成图片保存到 `public/generated/`。
+- 16 个官方图腾均已接入 `public/totems/` 第一版 PNG 资产，preset 演示全部为 `ready`。
+- `/api/generate-image` 支持 ModelScope `Tongyi-MAI/Z-Image-Turbo`，用于未来 custom 或需要重新生成图像的场景，生成图片保存到 `public/generated/`。
 - 商品名由系统生成，不由 AI 随机生成。
 - 订单和生产单使用同一个 `image.image_url`，保证设计文件进入履约链路。
 
@@ -117,8 +118,9 @@ IMAGE_API_KEY=
     "life_attitude": "正在生长，也值得被看见"
   },
   "image": {
-    "source": "placeholder",
-    "status": "needs_generation"
+    "source": "mock",
+    "status": "ready",
+    "image_url": "/totems/spring-star-field.png"
   }
 }
 ```
@@ -142,17 +144,23 @@ npm run build
 
 接口矩阵验证：
 
-- `我长痘痘` -> `青春星野` -> `needs_generation`
-- `我说话结巴` -> `句子积木` -> `needs_generation`
-- `我长得矮` -> `口袋山丘` -> `needs_generation`
-- `我头发少` -> `轻羽冠` -> `needs_generation`
+- `我长痘痘` -> `青春星野` -> `ready`
+- `我说话结巴` -> `句子积木` -> `ready`
+- `我长得矮` -> `口袋山丘` -> `ready`
+- `我头发少` -> `轻羽冠` -> `ready`
+- `我容易紧张` -> `弹簧小鹿` -> `ready`
+- `我总是想太多` -> `脑内星球` -> `ready`
+- `我手小` -> `星豆掌印` -> `ready`
+- `我肩窄没气场` -> `轻翼肩章` -> `ready`
+- `我容易忘东西` -> `记忆贝壳` -> `ready`
+- `我做事犹豫` -> `岔路小灯` -> `ready`
 - `我有点小肚子但很爱吃` -> `快乐云腹` -> `ready`
 - `我很社恐` -> `隐形蘑菇` -> `ready`
 - `我总是拖延` -> `慢慢龟印` -> `ready`
 
 真实生图验证：
 
-- `青春星野` 已通过 ModelScope `Tongyi-MAI/Z-Image-Turbo` 生成图片并保存为 `/generated/*.png`。
+- ModelScope `Tongyi-MAI/Z-Image-Turbo` 链路已验证可生成并保存到 `/generated/*.png`；当前 16 个官方图腾优先使用稳定官方资产，现场演示不依赖实时生图。
 
 ## 路演主链路
 
