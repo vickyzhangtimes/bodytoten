@@ -10,24 +10,25 @@ type ProductCardProps = {
 };
 
 export function ProductCard({ product, selected, totemImageUrl, onSelect }: ProductCardProps) {
-  const bgClass: Record<Product["product_type"], string> = {
-    badge: "pcard-bg-badge",
-    phone_case: "pcard-bg-phone",
-    sticker: "pcard-bg-sticker",
-  };
   const imageUrl = totemImageUrl ?? "/mock/generic-totem-placeholder.svg";
+  const productLabel = productTypeLabel(product.product_type);
 
   return (
-    <article className={`pcard ${selected ? "selected" : ""} ${onSelect ? "is-selectable" : ""}`}>
-      <div className={`pcard-img-wrap ${bgClass[product.product_type]}`}>
-        <Image
-          src={imageUrl}
-          alt={`${product.product_name} design`}
-          width={200}
-          height={200}
-          className="pcard-img"
-          unoptimized
-        />
+    <article className={`pcard pcard-${product.product_type} ${selected ? "selected" : ""} ${onSelect ? "is-selectable" : ""}`}>
+      <div className="pcard-img-wrap">
+        <span className="pcard-kind">{productLabel}</span>
+        <div className={`pcard-mockup pcard-mockup-${product.product_type}`} aria-label={`${productLabel}预览`}>
+          <div className="pcard-product-shell">
+            <Image
+              src={imageUrl}
+              alt={`${product.product_name} design`}
+              width={220}
+              height={220}
+              className="pcard-img"
+              unoptimized
+            />
+          </div>
+        </div>
       </div>
       <div className="pcard-body">
         <div className="pcard-name-row">
